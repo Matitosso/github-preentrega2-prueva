@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#cdf2c4;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.grilla{
+    background-color: fuchsia;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.3fr 1.4fr 0.3fr; 
+    gap: 0px 0px; 
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: 
+      "headerBox"
+      "mainBox"
+      "footerBox"; 
+   
+    
+    
+}
+.headerBox{
+    grid-area: headerBox;
+    background-color: aqua;    
+    height: 10vh;
+    font-size: 1.5rem;
+    text-align: center;    
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 200 px;
+}
+.logo{
+    background-color: green;
+    border: red solid 2px;
+}
+.portada{
+    background-color: yellow;
+    border: red solid 2px;
+
+}
+.vacio{
+    background-color: grey;
+    border: red solid 2px;
+
+}
+
+.mainBox{
+    grid-area: mainBox;
+       
+    font-size: 1.5rem;
+    text-align: center;    
+    display: grid;    
+    margin:20px;
+            
+}
+.carrusel{
+    background-color: white;
+    height: 300px;
+    font-size: 1.5rem;
+    
+    text-align: center;    
+    display: grid; 
+
+}
+.categorias{
+    background-color: #e4540c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    grid-template-areas:
+      "catA catPI catPE";
+      justify-items: center;
+      align-items: center;
+
+} 
+     
+.catA { 
+    grid-area: catA; 
+    
+    }
+      
+.catPI { 
+    grid-area: catPI; 
+    
+    }
+      
+.catPE { 
+    grid-area: catPE; 
+    
+    }
+
+.destacados {  
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-areas:
+    "destUno destDos destTres destCuatro";
+}
+
+.destUno { 
+    grid-area: destUno; 
+   
+}
+
+.destDos { 
+    grid-area: destDos;
+    
+}
+
+.destTres {
+    grid-area: destTres; 
+   
+}
+      
+.destCuatro {
+    grid-area: destCuatro;
+   
+}  
+
+.footerBox { 
+    display: grid;
+    background-color: #00c8ff;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "navegacion iconMP cotacto redSocial";
+  }
+  
+.navegacion { 
+    grid-area: navegacion; 
+    
+}
+  
+.iconMP { 
+    grid-area: iconMP; 
+    
+}
+  
+.contacto { 
+    grid-area: cotacto; 
+   
+}
+  
+.redSocial { 
+    grid-area: redSocial; 
+    ;
+}  
+
+.grillaProducto{
+    
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.3fr 1.4fr 0.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "headerBox"
+      "mainProduc"
+      "footerBox";
+}
+.mainProduc {  
+    display: grid;
+    
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    grid-auto-rows: 1fr;
+    gap: 50px 50px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: center;
+    grid-template-areas:
+    "productUno productDos productTres"
+    "productCuatro productCinco productSeis";
+
+}
+  
+.productUno { 
+    grid-area: accesUno; 
+    background-color: #00ff48;
+    border: red solid 2px;
+}
+  
+.productDos { 
+    grid-area: accesDos; 
+    background-color: #00ff48;
+    border: red solid 2px;
+}
+  
+.productTres { 
+    grid-area: accesTres;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+.productCuatro { 
+    grid-area: accesCuatro;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+.productCinco { 
+    grid-area: accesCinco;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+.productSeis { 
+    grid-area: accesSeis;
+    background-color: #00ff48;
+    border: red solid 2px; 
+}
+  
+
+
+ul{
+    list-style-type: none;
+}
+
+
+.portada{
+    background-color: yellow;    
+    width: auto;
+    height: 300px;
+    padding: 1.5rem;
+    flex-wrap: nowrap;    
+    justify-content: space-around;
+    align-items: center;
+
+}
+.categoria{
+    background-color: blue;
+    width: auto;
+    height: 300px;
+    padding:1rem;    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.cat{
+    background-color: red;
+    width: auto;  
+    height: auto;
+    
+}
+.destacado{
+    background-color: violet;
+    width:auto;
+    height: 300px;
+    padding:1rem;    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.destac{
+    background-color: #8eb92a;
+    width: auto;
+    padding: 0.5rem; 
+    justify-content: space-between;   
+}
+
+main p{
+    line-height: 1.5;
+    margin-left: 10px;
+}
+main h2{
+    margin-left: 10px;
+}
+main h3{
+    color:rgb(87, 84, 71);
+    font-family: 'Playpen Sans', cursive;
+}
+main h4{
+    font-family: 'Manrope', sans-serif;
+}
